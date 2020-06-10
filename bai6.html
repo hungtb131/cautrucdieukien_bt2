@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trinh bậc 1</title>
+</head>
+<body>
+<script>
+    alert("Giải phương trình bậc 1: ax + b = 0");
+    alert("Nhập 2 hệ số a,b");
+
+    function QuadraticEquation1() {
+        let a = prompt("Nhập hệ số a=");
+        let b = prompt("Nhập hệ số b=");
+        let x = (-b / a);
+        if (a == 0) {
+            if (b == 0) {
+                alert("Phương trình vô số nghiệm");
+            } else {
+                alert("Phương trình vô nghiệm");
+            }
+        } else {
+            alert("Phương trình có nghiệm x= " +x);
+        }
+    }
+    QuadraticEquation1();
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+<script>
+    //    Phương trình có vô số nghiệm
+    //    Phương trình có 2 nghiệm riêng biệt
+    document.write("Giải phương trình bậc 2: ax2 + bx + c = 0 <br>");
+    document.write("Nhập 3 hệ số a, b, c <br>");
+    function QuadraticEquation2() {
+        let a = prompt("Nhập hệ số a=");
+        let b = prompt("Nhập hệ số b=");
+        let c = prompt("Nhập hệ số c=");
+        let delta = b*b - 4*a*c;
+        let x1 = (-b + Math.sqrt(delta)/2*a);
+        let x2 = (-b - Math.sqrt(delta)/2*a);
+        if (delta < 0) {
+            alert("Phương trình vô nghiệm");
+        } else if (delta == 0){
+            alert("Phương trình vô số nghiệm");
+        } else {
+            alert("Phương trình có 2 nghiệm riêng biệt là x1= " +x1 + " và x2= " +x2);
+        }
+    }
+    QuadraticEquation2();
+</script>
+</body>
+</html>
