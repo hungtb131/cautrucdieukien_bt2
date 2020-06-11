@@ -6,31 +6,22 @@
 </head>
 <body>
 <script>
-    alert('Kiểm tra 3 số có phải là cạnh 1 tam giác?');
-    alert('Nhập 3 số cần kiểm tra');
+     alert('Nhập 3 số cần kiểm tra');
+        let a = prompt("Nhập a =");
+        let b = prompt("Nhập b =");
+        let c = prompt("Nhập c =");
+        let test1 = (a > 0 && b > 0 && c > 0);
+        let test2 = (a+b > c);
+        let test3 = (a+c > b);
+        let test4 = (b+c > a);
 
-    function test() {
-        let a = prompt("Nhập cạnh a =");
-        let b = prompt("Nhập cạnh b =");
-        let c = prompt("Nhập cạnh c =");
-        let test1 = (a > 0, b > 0, c > 0);
-        let test2 = (a + b > c);
-        let test3 = (a + c > b);
-        let test4 = (b + c > a);
-
-        if (test1 == true) {
-            if (test2 == true && test3 == true && test4 == true) {
-                alert('Do là 3 cạnh của 1 tam giác');
+        if (test1&&test2&&test3&&test4 ) {
+                alert('Đây là 3 cạnh của một tam giác')
             } else {
-                alert('Do khong phai là 3 cạnh của 1 tam giác')
+                alert('Đây không phải là 3 cạnh của 1 tam giác')
             }
-        } else {
-            alert('Do khong phai là 3 cạnh của 1 tam giác')
-        }
 
-    }
-//anh chị test em bài này nhé em khong show duoc ket qua nhu y//
-    test();
+
 </script>
 </body>
 </html>
