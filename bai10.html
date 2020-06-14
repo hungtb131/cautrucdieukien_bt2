@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ophuong trình tính giá điện</title>
+
+</head>
+<body>
+<script>
+    let a = +prompt('Số điện tiêu thụ : ');
+    let S
+    let b = 1.549;
+    let c = 1.600;
+    let d = 1.858;
+    if (a <=  200 ){
+          S = a * c
+    }
+        else if ( a <=100)
+        {
+        S = a* b
+    }
+        else S = a*d
+        document.write("số tiền điện cần thanh toán là" + " " + S + "000 VND");
+</script>
+</body>
+</html>

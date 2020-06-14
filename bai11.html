@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Nhập vào thu nhập: '));
+    if (20000000 > a > 9000000) {
+        document.write('Tiền thuế bằng 10% thu nhập' + "=")
+    }else if (a > 20000000) {
+        document.write('Tiền thuế bằng 30% thu nhập' + "=")
+    }else {
+        document.write('Không thuế')
+    }
+</script>
+</body>
+</html>

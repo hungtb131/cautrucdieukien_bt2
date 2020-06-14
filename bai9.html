@@ -7,18 +7,21 @@
 <body>
 <script>
      alert('Nhập 3 số cần kiểm tra');
-        let a = prompt("Nhập a =");
-        let b = prompt("Nhập b =");
-        let c = prompt("Nhập c =");
-        let test1 = (a > 0 && b > 0 && c > 0);
-        let test2 = (a+b > c);
-        let test3 = (a+c > b);
-        let test4 = (b+c > a);
+     let a, b, c;
+        a= prompt("Nhập a = ");
+        b= prompt("Nhập b = ");
+        c= prompt("Nhập c = " );
 
-        if (test1&&test2&&test3&&test4 ) {
+        let test1 = (a > 0 && b > 0 && c > 0);
+        let test2 = ( a + b > c);
+        let test3 = ( a + c > b);
+        let test4 = ( b + c > a);
+
+        if ( test1 && test2 && test3 && test4 ) {
                 alert('Đây là 3 cạnh của một tam giác')
             } else {
-                alert('Đây không phải là 3 cạnh của 1 tam giác')
+
+            alert('Đây không phải là 3 cạnh của 1 tam giác')
             }
 
 
